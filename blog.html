@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <link rel="stylesheet" href="blogr.css" type="text/css" />
+  
+  <title>Blogr</title>
+
+  <style>
+   
+  </style>
+</head>
+<body>
+	<header>
+		<div class="flex">
+			<a href="#" >
+				<img src="images/logo.svg"  id="logo"/>
+			</a>
+			
+			<nav>
+				<ul class="flex">
+					<div class="left-nav">
+					
+						<li><a href="#" class="flex">Product
+						<picture>
+							<source srcset="images/icon-arrow-dark.svg" media="(max-width: 710px)">
+							</source>
+							<img src="images/icon-arrow-light.svg" />
+						</picture>
+						</a>
+							<div class="dropdown">
+								<a href="#">Overview</a>
+								<a href="#">Pricing</a>
+								<a href="#">Marketplace</a>
+								<a href="#">Features</a>
+								<a href="#">Integrations</a>
+							</div>
+						</li>
+						
+						<li><a href="#" class="flex">Company 
+						<picture>
+							<source srcset="images/icon-arrow-dark.svg" media="(max-width: 710px)">
+							</source>
+							<img src="images/icon-arrow-light.svg" />
+						</picture>
+						</a>
+							<div class="dropdown">
+								<a href="#">About</a>
+								<a href="#">Team</a>
+								<a href="#">Blog</a>
+								<a href="#">Careers</a>
+							</div>
+						</li>
+						
+						<li>
+							<a href="#" class="flex">
+								Connect 
+								<picture>
+									<source srcset="images/icon-arrow-dark.svg" media="(max-width: 710px)">
+									</source>
+									<img src="images/icon-arrow-light.svg" />
+								</picture>
+							</a>
+							<div class="dropdown">
+								<a href="#">Contact</a>
+								<a href="#">Newsletter</a>
+								<a href="#">Linkedln</a>
+							</div>
+						</li>
+						
+					</div>
+					<div class="right-nav">
+						<li><a href="#" class="active-btn">Sign Up</a></li>
+						<li><a href="#">Login</a></li>
+					</div>
+				</ul>
+			</nav>
+			
+			<img src="images/icon-hamburger.svg" id="hamburger" />
+		</div>
+		
+		<div class="intro">
+			<h1> A modern publishing platform</h1>
+			<p>Grow your audience and build your online brand</p>
+			<a href="#" class="active-btn">Start for Free</a>
+			<a href="#" class="light-btn">Learn More</a>
+		</div>
+	</header>
+	
+	<main>
+		<section class="editor-section">
+			<h1>Designed for the future</h1>
+			<div>
+				<div id="laptop-illustration">
+					<img src="images/illustration-editor-desktop.svg" alt="desktop"/>
+				</div>
+				<div>
+					<article>
+						<h2>Introducing an extensible editor</h2>
+						<p>  Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
+						  The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
+						  videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
+						  change the looks of a blog.</p>
+					</article>
+					
+					<article>
+						<h2>Robust content management</h2>
+						<p>Flexible content management enables users to easily move through posts. Increase the usability of your blog 
+							by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.</p>
+					</article>
+				</div>
+			</div>
+		</section>
+		
+		
+		<section class="mobile-section flex">
+			<div>
+				<img src="images/illustration-phones.svg" alt="illustration-phones" />
+			</div>
+			
+			<div>
+				<h2>State of the Art Infrastructure</h2>
+				<p>With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
+				This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.</p>
+			</div>
+		</section>
+		
+		
+		<section class="laptop-section flex">
+		<div></div>
+			<div>
+				<!-- <img src="images/illustration-laptop-desktop.svg" alt="desktop"/> -->
+			</div>
+			<div>
+			  <article>
+				  <h2>Free, open, simple</h2>
+				  <p>Blogr is a free and open source application backed by a large community of helpful developers. It supports 
+				  features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
+				  and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.</p>
+			 </article>
+				
+			<article>
+				<h2>Powerful tooling</h2>
+				<p>Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but capable of producing even the most complicated sites.</p>
+			</article>
+			</div>
+		</section>
+	</main>
+	
+	
+	<footer class="flex">
+		<a href="#">
+			<img src="images/logo.svg" />
+		</a>
+		
+		<div>
+			<p>Product</p>
+			
+			<ul>
+				<li><a href="#">Overview</a></li>
+				<li><a href="#">Pricing</a></li>
+				<li><a href="#">Marketplace</a></li>
+				<li><a href="#">Features</a></li>
+				<li><a href="#">Integrations</a></li>
+			</ul>
+		</div>	
+		
+		<div>
+			<p>Company</p>
+			
+			<ul>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Team</a></li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">Careers</a></li>
+			</ul>
+		</div>	
+		
+		<div>
+			<p>Connect</p>
+			
+			<ul>
+				<li><a href="#">Contact</a></li>
+				<li><a href="#">Newsletter</a></li>
+				<li><a href="#">LinkedIn</a></li>
+			</ul>
+		</div>
+	</footer>
+	
+	<script>
+		const hamburger = document.getElementById("hamburger");
+		const nav = document.querySelector("nav");
+		hamburger.onclick = function () {
+			if (nav.style.display === "block") {
+				nav.style.display = "none";
+				hamburger.src = "images/icon-hamburger.svg";
+			} else {
+				hamburger.src = "images/icon-close.svg";
+				nav.style.display = "block";
+			}
+		}
+		
+		
+		window.onresize = function() {
+			if (window.innerWidth >= 710) {
+				nav.style.display = "block";
+			} else {
+				nav.style.display = "none";
+				hamburger.src = "images/icon-hamburger.svg";
+			}
+		}
+		
+		
+	</script>
+</body>
+</html>
